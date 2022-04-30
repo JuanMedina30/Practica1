@@ -19,15 +19,4 @@ _GLOBAL__sub_I_example.cpp:
         pop     {r11, lr}
         bx      lr
 .L.str:
-        .asciz  "Hola mundo sexos"
-        nop
-        adds    r7, r7, #8
-        mov     sp, r7
-        pop     {r7, pc}
-_GLOBAL__sub_I_main:
-        push    {r7, lr}
-        add     r7, sp, #0
-        movw    r1, #65535
-        movs    r0, #1
-        bl      __static_initialization_and_destruction_0(int, int)
-        pop     {r7, pc}
+        .asciz  "Hola mundo"
